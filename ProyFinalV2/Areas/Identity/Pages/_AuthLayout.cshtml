@@ -1,0 +1,18 @@
+﻿@{
+    // esta primera instruccion nos ayudara a cargar el diseño de pagina de la siguiente direccion
+    Layout = "/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class=" = " container">
+
+    <main role="main" class="pb-3">
+        @RenderBody();
+    </main>
+</div>
+
+
+@section Scripts {
+    @await RenderSectionAsync("Scripts", required: false);
+    }
+
